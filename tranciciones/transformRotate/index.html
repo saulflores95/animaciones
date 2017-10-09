@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transformacion rotacion</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      font-family: Arial;
+    }
+    .container {
+      border: 1px solid red;
+    }
+    .container:hover .cuadrado{
+      /*transform: rotateZ(45deg) rotateY(45deg) rotateX(45deg);*/
+      transform: rotate3d(1, 1, 1, 360deg);
+    }
+    .cuadrado {
+      height: 200px;
+      width: 200px;
+      background: #7dc900;
+      margin: 20px;
+      transition: 2s;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="cuadrado">
+        Hola Mundo!
+      </div>
+    </div>
+  </body>
+</html>
